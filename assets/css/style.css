@@ -1,0 +1,106 @@
+/* declaração de variaveis globais */
+:root {
+    --cor-neve: #fffafa;
+    --cor-verde-claro: #e3fbe3;
+    --cor-verde-musgo: rgba(30, 130, 30, 0.7);
+    --cor-verde-limao: #32cd32;
+    --cor-preto: #000000;
+    --cor-branco: #ffffff;
+    --cor-cinza: #aaaaaa;
+    --cor-cinza-claro: #dcdcdcb4; 
+    --cor-dourado: #eb783f;
+    --cor-verde-transparente: #e3fbe380;
+    --cor-cinza-escuro: #000000bf;
+    --cor-texto: #212529EE;
+
+    --altura-titulo: 2em;
+    --altura-subtitulo: 1.5em;
+    
+}
+
+
+body {
+    /* aqui fonte de texto */
+    background: var(--cor-neve)
+}
+
+header {
+    background: var(--cor-verde-claro);
+    padding-block: 16px;
+    /* padding vertical */
+    padding-inline: 16px;
+    /* padding horizontal */
+}
+
+nav {
+    max-width: 1280px;
+    height: 175px;
+    margin-inline: auto;
+    /* centraliza com margem horizontal automatica*/
+    display: flex;
+    /* alinhamentos horizontal */
+    justify-content: space-between;
+    /* justificação horizontal */
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    /* alinhamento horizontal*/
+    gap: 32px;
+    user-select: none;
+    /* não permite selecionar o texto*/
+}
+
+nav ul a {
+    color: var(--cor-preto);
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+nav ul a:hover {
+    color: var(--cor-dourado);
+    
+}
+
+.banner {
+    width: 100vw;
+
+}
+
+footer {
+    background:url("../img/bg.png");
+    text-align: center;
+    padding-block: 16px;
+}
+
+footer p {
+    color: var(--cor-branco);
+    font-size: 13px;
+    margin-top: 16px;
+    cursor: default;
+    user-select: none;
+}
+
+/* media query*/
+@media only screen and (max-width: 800px) {
+    nav {
+        justify-content: right;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 8px;
+        left: 8px;
+        flex-direction: column;
+        gap: 8px;
+        border: 1px solid var(--cor-verde-limao);
+        border-radius: 10px;
+        padding: 5px;
+        background: var(--cor-verde-transparente); 
+    }
+
+}

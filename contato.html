@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Verde|Contato</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contato.css">
+
+    <script src="https://kit.fontawesome.com/65c5f54af9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <a href="index.html">
+                <h1> <img src="assets/img/logo-header.png" alt="Logo Mundo Verde"></h1>
+            </a>
+            <ul>
+                <li> <a href="index.html">
+                    <i class="fa-regular fa-face-smile" style="color:green;" ></i> Home</a></li>
+                <li> <a href="produtos.html">Produtos</a></li>
+                <li> <a href="contato.html">Contato</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="painel">
+
+            <div class="conteudo">
+                <h2>Contato</h2>
+
+                <p>Se tiver alguma dúvida, sugestão ou interesse em algum de nossos produtos,
+                    converse com nossa equipe de atendimento!
+                </p>
+                <a href="https://api.whatsapp.com/send?phone=5542999556644" target="_blank">
+                    <i class="fa fa-whatsapp"></i>
+                    Atendimento via Whatsapp
+                </a>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <form action="https://formsubmit.co/ajax/taypuppo@icloud.com" method="post">
+
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="nome completo" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="email@dominio.com" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(xx)xxxxx-xxxx" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="70" rows="0"></textarea>
+
+                <fieldset>
+
+                    <legend>Como prefere o nosso contato?</legend>
+
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> Whatsapp
+                    </label>
+
+                    <label for="radio-telefone">
+                        <input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone
+                    </label>
+
+                    <label for="radio-email">
+                        <input type="radio" name="contato" value="email" id="radio-email"> E-mail
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Produtos que mais tem interesse</legend>
+                    <select name="interesse">
+                        <option value="Cereais">Cereais</option>
+                        <option value="Suplementos">Suplementos</option>
+                        <option value="Temperos">Temperos</option>
+                    </select>
+                </fieldset>
+
+                <label>
+
+                    <input type="checkbox" checked>Quero receber ofertas por e-mail</input>
+                </label>
+
+
+                <button type="submit">Enviar</button>
+
+
+            </form>
+
+
+        </div>
+    </main>
+
+
+
+    <footer>
+        <img src="assets/img/logo-rodape.png" alt="Logo Mundo Verde">
+        <!-- https://unicode-table.com/pt-->
+        <p>&copy;Copyright Mundo Verde</p>
+
+    </footer>
+
+</body>
+
+</html>
